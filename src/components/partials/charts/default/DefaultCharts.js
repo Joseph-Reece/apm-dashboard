@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Doughnut, Line } from "react-chartjs-2";
 
 import { Chart, CategoryScale, LinearScale, BarElement, PointElement, LineElement, ArcElement, Tooltip, Filler, Legend, } from "chart.js";
-Chart.register(CategoryScale, LinearScale, BarElement, PointElement, LineElement, ArcElement, Tooltip, Filler, Legend,);
 
 import {
   salesStatistics,
@@ -15,6 +14,7 @@ import {
   salesStatisticsSet4,
   orderStatistics,
 } from "./DefaultData";
+Chart.register(CategoryScale, LinearScale, BarElement, PointElement, LineElement, ArcElement, Tooltip, Filler, Legend,);
 
 export const DefaultOrderChart = () => {
   return (
